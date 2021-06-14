@@ -24,7 +24,7 @@ def get_content(html):
         print(vacancy_name.text)
 
         vacancy_salary = value.find('span', attrs={'class': 'price-text-1HrJ_'})
-        print('Зарплата' + vacancy_salary.text)
+        print('Зарплата ' + vacancy_salary.text)
 
         vacancy_marker = value.find('div', attrs={'data-marker': 'item-specific-params'})
         print(vacancy_marker.text)
